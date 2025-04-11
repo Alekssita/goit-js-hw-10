@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+input#datetime-picker {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+button[data-start] {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[data-start]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* iziToast customization */
+.iziToast {
+  font-size: 1rem;
+}
+
+.iziToast > .iziToast-body {
+  display: flex;
+  align-items: center;
+}
+
+.iziToast > .iziToast-body .iziToast-message {
+  padding-left: 0.5rem;
+}
