@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 320px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #888;
+  border-radius: 6px;
+}
+
+fieldset {
+  margin-bottom: 1.5rem;
+  border: 2px solid #888;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 6px;
+}
+
+legend {
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  border: 2px solid #888;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Notification styles */
+.notification {
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.notification.success {
+  background-color: #28a745; /* green */
+}
+
+.notification.error {
+  background-color: #dc3545; /* red */
+}
+
+.notification .icon {
+  margin-right: 0.5rem;
+}
