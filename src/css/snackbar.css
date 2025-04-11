@@ -1,73 +1,84 @@
+/* styles.css */
 body {
   font-family: Arial, sans-serif;
-  padding: 2rem;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 label {
-  font-size: 1.2rem;
   display: block;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: left;
 }
 
-input[type="text"] {
-  width: 320px;
-  padding: 0.6rem;
+input[type='number'] {
+  width: 100%;
+  padding: 10px;
   font-size: 1rem;
-  margin-bottom: 1.5rem;
-  border: 2px solid #888;
-  border-radius: 6px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 fieldset {
-  margin-bottom: 1.5rem;
-  border: 2px solid #888;
-  padding: 1rem;
-  width: fit-content;
-  border-radius: 6px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: left;
 }
 
 legend {
-  font-size: 1.1rem;
-  padding: 0 0.5rem;
+  font-weight: bold;
+  padding: 0 10px;
 }
 
-input[type="radio"] {
-  margin-right: 0.5rem;
-}
-
-button {
-  padding: 0.6rem 1.5rem;
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 20px;
   font-size: 1rem;
-  background-color: #f0f0f0;
-  border: 2px solid #888;
+}
+
+button[type='submit'] {
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px;
+  border: none;
   border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #e0e0e0;
-}
-
-/* Notification styles */
-.notification {
-  padding: 1rem 1.5rem;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  color: #fff;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
-.notification.success {
-  background-color: #28a745; /* green */
-}
-
-.notification.error {
-  background-color: #dc3545; /* red */
-}
-
-.notification .icon {
-  margin-right: 0.5rem;
+button[type='submit']:hover {
+  background-color: #5751d9;
 }
